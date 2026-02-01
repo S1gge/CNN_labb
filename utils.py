@@ -55,7 +55,7 @@ def predict(model, weights, tensor_img):
     y_pred = torch.argmax(output, dim = 1)
     class_name = weights.meta["categories"][y_pred.item()]
     print("=========="*5)
-    print(f"Predikted klass of picture is: {class_name.upper()}.")
+    print(f"Den predikerade klassen för bilden är: {class_name.upper()}.")
     print("=========="*5)
     return y_pred
 
